@@ -57,13 +57,12 @@ export default function BasicSelect() {
             {weather.name}, {weather.sys.country}
           </Typography>
           <Typography sx={{ mb: 1.5, textAlign:"right" }} color="text.secondary">
-            {weather.weather[0].main}
+            {weather.weather[0].main}, {weather.weather[0].description}
           </Typography>
 
           <Typography variant="h3" component="div">
             {Math.round(weather.main.temp)}°C
           </Typography>
-        
           <Typography variant="body2" color="text.secondary">
             lat : {weather.coord.lat}
           </Typography>
