@@ -63,12 +63,6 @@ export default function BasicSelect() {
           <Typography variant="h3" component="div">
             {Math.round(weather.main.temp)}°C
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            lat : {weather.coord.lat}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            lon : {weather.coord.lon}
-          </Typography>
         </CardContent>
       </Card> : ''}
     </Box>
