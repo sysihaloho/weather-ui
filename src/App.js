@@ -32,7 +32,7 @@ export default function BasicSelect() {
 
   const handleChange = (event) => {
     setCity(event.target.value);
-    const url = "http://localhost:8080/getWeatherByCity/" + event.target.value;
+    const url = `http://localhost:8080/getWeatherByCity/${event.target.value}`;
     const fetchData = async () => {
       try {
         const response = await fetch(url);
